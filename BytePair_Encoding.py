@@ -15,10 +15,10 @@ text = (
      "of someunknownPlace."
 )
 
-#Encode text
+#Encode text to integers
 integers = tokenizer.encode(text, allowed_special={"<|endoftext|>"})
 print(integers)
 
-#Decode text
+#Decode integers back to text
 strings = tokenizer.decode(integers)
 print(strings)
